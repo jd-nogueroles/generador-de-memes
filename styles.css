@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #30343f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inicio HEADER */
+header {
+background-color: #191e2b;
+padding: 1rem;
+width: 100%;
+text-align: center;
+
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin: 0 1rem; 
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Fin HEADER */
+
+/* Inicio opciones */
+
+.editor {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.controles {
+    width: 20%;
+    background-color: #252935;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.controles h2, .controles h3 {
+    margin-top: 0;
+}
+
+.controles label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.controles input[type="text"], .controles input[type="color"], .controles select {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.controles input[type="range"] {
+width:100%; 
+
+}
+
+.meme {
+    position: relative;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#meme-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color:black;
+    text-shadowÇ: 2px 2px 4px white;
+}
+
+/* Fin opciones */
+
