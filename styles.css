@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    in-height: 100vh;
 }
 
 /* Inicio HEADER */
@@ -19,8 +20,11 @@ text-align: center;
 }
 
 .nav-bar ul li {
-    display: inline;
-    margin: 0 1rem; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bar ul li a {
@@ -44,6 +48,9 @@ text-align: center;
     background-color: #252935;
     padding: 1rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .controles h2, .controles h3 {
@@ -51,7 +58,6 @@ text-align: center;
 }
 
 .controles label {
-    display: block;
     margin-top: 1rem;
 }
 
@@ -72,16 +78,52 @@ width:100%;
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#meme-text {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    color:black;
-    text-shadowÇ: 2px 2px 4px white;
+
+#meme-imagen {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
+
+#top-text, #bottom-text {
+position: absolute;
+width: 100%;
+text-align: center;
+font-size: 2rem;
+color:black;
+text-shadow: 3px 3px 5px white;
+}
+
+#top-text {
+    top: 0;
+}
+
+#bottom-text {
+    bottom: 0;
+}
+
+
 
 /* Fin opciones */
 
+/* dark mode */
+
+body.dark-mode {
+    background-color: #121212 ;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color:#1c1c1c;
+}
+
+body.dark-mode .controles {
+    background-color: #333;
+}
+/* dark mode */
