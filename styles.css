@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    in-height: 100vh;
+    min-height: 100vh;
 }
 
 /* Inicio HEADER */
@@ -19,12 +19,16 @@ text-align: center;
 
 }
 
-.nav-bar ul li {
+.nav-bar ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+}
+
+.nav-bar ul li {
+    margin: 0 1rem;
 }
 
 .nav-bar ul li a {
@@ -39,10 +43,19 @@ text-align: center;
 .editor {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin-top: 2rem;
 }
 
+.meme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    max-width: 600px;
+}
 .controles {
     width: 20%;
     background-color: #252935;
@@ -66,14 +79,13 @@ text-align: center;
     margin-top: 0.5rem;
 }
 
-.controles input[type="range"] {
-width:100%; 
 
-}
 
 .meme {
     position: relative;
-    width: 60%;
+    width: 75%;
+    max-width: 600px;
+    height: 600px;
     background-color: white;
     text-align: center;
     padding: 1rem;
@@ -82,11 +94,12 @@ width:100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 500px;
 }
-
 
 #meme-imagen {
     max-width: 100%;
+    max-height: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -101,14 +114,26 @@ text-shadow: 3px 3px 5px white;
 }
 
 #top-text {
-    top: 0;
+    top: 10px;
 }
 
 #bottom-text {
-    bottom: 0;
+    bottom: 10px;
 }
 
-
+.download-button {
+    display: block;
+    mmargin: 2rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    
+}
 
 /* Fin opciones */
 
